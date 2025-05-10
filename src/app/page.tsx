@@ -42,6 +42,7 @@ export default function Home() {
   }
 
   // Smooth scroll function with improved physics
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const smoothScroll = (targetScrollLeft: number) => {
     if (!scrollRef.current) return
 
@@ -67,7 +68,7 @@ export default function Home() {
   }
 
   // Infinite carousel logic
-  const [cards, setCards] = useState([
+  const [cards] = useState([
     {
       img: "/img1.png",
       title: "Music System",
