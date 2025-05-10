@@ -1,7 +1,7 @@
 export default function Navbar() {
     return (
-      <div className="w-full absolute top-5 left-0 p-2 z-50">
-        <div className="max-w-[70%] mx-auto bg-[#0D0D0D]/60 backdrop-blur-md rounded-full flex items-center justify-between px-6 py-3 shadow-md">
+      <div className="w-full fixed top-5 left-0 p-2 z-100 ">
+        <div className=" max-w-[70%] mx-auto bg-[#0D0D0D]/60 backdrop-blur-md rounded-full flex items-center justify-between px-6 py-3 shadow-md">
           <img
             className="h-15 w-15 rounded-md"
             src="/logo.png"
