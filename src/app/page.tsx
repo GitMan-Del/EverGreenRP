@@ -85,14 +85,14 @@ export default function Home() {
       desc: "Descoperă mai mult",
     },
     {
-      img: "/img1.png",
-      title: "Al 4-lea Card",
-      desc: "Info aici",
+      img: "/",
+      title: "[Titel]",
+      desc: "Info",
     },
     {
-      img: "/img2.png",
-      title: "Alt Card",
-      desc: "Detalii interesante",
+      img: "/",
+      title: "[Titel]",
+      desc: "Info ",
     },
   ])
 
@@ -150,8 +150,8 @@ export default function Home() {
     }
   }
 
-  // Duplicate cards for infinite scrolling
-  const allCards = [...cards, ...cards, ...cards]
+ // Duplicate cards for infinite scrolling
+  const allCards = [...cards]
 
   return (
     <div>
@@ -229,7 +229,7 @@ export default function Home() {
                         <Image src="/Avatar.png" alt="" width={30} height={30} className="rounded-full" />
                       </div>
                       <div className="bg-[#00E676] p-2 flex items-center justify-center rounded-lg text-md font-bold text-black">
-                        +396
+                        +312
                       </div>
                     </div>
                   </div>
@@ -278,29 +278,30 @@ export default function Home() {
         </div>
       </motion.div>
 
-      <section className="w-full relative h-screen text-white overflow-hidden select-none">
+      <section className="w-full relative z-20 h-screen text-white overflow-hidden select-none">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="w-96 h-96 z-10 bg-[#00E676] absolute bottom-0 left-24 blur-[250px]"
+          className="w-1/3 h-1/2 z-10  bg-[#00E676] absolute bottom-0 left-24 blur-[250px]"
         ></motion.div>
         <Image
-          className="absolute pointer-events-none top-0 left-0 w-full h-full object-cover"
+          className="absolute pointer-events-none top-0 left-0 w-full  h-full object-cover"
           src="/Bg2.png"
-          width={1000}
-          height={1000}
+          width={1900}
+          height={1200}
           alt="bg"
         />
         <Image
-          className="absolute pointer-events-none bottom-0 right-0 w-full h-full object-fill"
+          className="absolute pointer-events-none bottom-0 right-0 w-full z-20 h-full object-fill"
           src="/gtao-artwork.png"
-          width={1000}
-          height={1000}
+          width={1900}
+          
+          height={1200}
           alt="bg"
         />
 
-        <div className="relative z-10 flex flex-row items-center p-10 w-full h-full">
+        <div className="relative z-20 flex flex-row items-center p-10 w-full h-full">
           <div className="relative w-full flex justify-end">
             <div className="relative w-1/2">
               <motion.div
@@ -354,7 +355,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 w-full">
+        <div className="absolute bottom-0 z-20 w-full">
           <Image
             className="w-full h-72 object-cover opacity-95"
             src="/test.svg"
